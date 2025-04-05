@@ -17,6 +17,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/assets/
+    - lib/assets/cash.png
+    - lib/assets/credit.png
+    - lib/assets/paypal.png
+    - lib/assets/watch.png
+    - lib/assets/earpod.png
+    - lib/assets/hoodie.png
   fonts:
     - family: Poppins
       fonts:
