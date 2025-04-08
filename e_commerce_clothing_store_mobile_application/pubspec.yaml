@@ -9,6 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  firebase_core: ^3.13.0
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.0
+  equatable: ^2.0.7
+
+  cupertino_icons: ^1.0.6
+  
+  user_repository:
+    path: packages/user_repository
 
 dev_dependencies:
   flutter_test:
@@ -18,13 +28,12 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/
     - lib/assets/cash.png
     - lib/assets/credit.png
     - lib/assets/paypal.png
-    - lib/assets/watch.png
-    - lib/assets/earpod.png
-    - lib/assets/hoodie.png
+    - lib/assets/images/watch.png
+    - lib/assets/images/earpod.png
+    - lib/assets/images/hoodie.png
   fonts:
     - family: Poppins
       fonts:
