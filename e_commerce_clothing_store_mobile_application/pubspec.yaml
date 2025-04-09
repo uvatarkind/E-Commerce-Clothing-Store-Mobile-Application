@@ -9,31 +9,34 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  
+dependencies:
+  http: ^1.3.0
   firebase_core: ^3.13.0
   bloc: ^9.0.0
   flutter_bloc: ^9.1.0
   equatable: ^2.0.7
-
   cupertino_icons: ^1.0.6
-  
+
   user_repository:
     path: packages/user_repository
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true
-  assets:
-    - lib/assets/cash.png
-    - lib/assets/credit.png
-    - lib/assets/paypal.png
-    - lib/assets/images/watch.png
+    assets:
     - lib/assets/images/earpod.png
     - lib/assets/images/hoodie.png
+    - lib/assets/images/watch.png
+    - lib/assets/images/black_white_nike.png
+    - lib/assets/images/jacket.png
+    - lib/assets/images/TV.png
+    - lib/assets/images/white_t_shirt.png
+    - lib/assets/images/t-shirt_girl.png
+
   fonts:
     - family: Poppins
       fonts:
@@ -42,4 +45,3 @@ flutter:
           weight: 700
         - asset: lib/assets/fonts/Poppins-Medium.ttf
           weight: 500
-  
