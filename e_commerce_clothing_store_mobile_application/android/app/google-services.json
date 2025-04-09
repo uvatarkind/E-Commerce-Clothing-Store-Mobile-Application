@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "254073461726",
+    "project_id": "gdg-capstone",
+    "storage_bucket": "gdg-capstone.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254073461726:android:b9bdad5369a8dec0b9db4f",
+        "android_client_info": {
+          "package_name": "com.example.e_commerce_clothing_store_mobile_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0DhJ-L3wfisgUUkSq9YOL4Xtz6rhmMj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

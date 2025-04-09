@@ -1,25 +1,23 @@
-// ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:e_commerce_clothing_store_mobile_application/app.dart';
+import 'package:user_repository/user_repository.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:e_commerce_clothing_store_mobile_application/simple_bloc_observer.dart';
+import 'features/products/presentation/product_list_page.dart'; // <-- keep your new page
 
-import 'features/products/presentation/product_list_page.dart';
-
-
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  Bloc.observer = SimpleBlocObserver();
+  runApp(MyApp(FirebaseUserRepo()));
+}
 void main() {
-  runApp(const MainApp());
+  runApp(
+    MaterialApp(
+      home: ProductListPage(),
+    ),
+  );
 }
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: ProductListPage(),
-
-      ),
-    );
-  }
-}
+*/
