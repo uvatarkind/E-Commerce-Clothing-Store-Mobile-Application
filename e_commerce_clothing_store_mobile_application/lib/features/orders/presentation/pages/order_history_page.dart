@@ -104,19 +104,19 @@ class _OrdersScreenState extends State<OrderHistory>
       padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       children: [
         _buildOrderItem(
-          imageUrl: 'lib/assets/watch.png',
+          imageUrl: 'lib/assets/images/watch.png',
           title: 'Watch',
           brand: 'Rolex',
           price: '\$40',
         ),
         _buildOrderItem(
-          imageUrl: 'lib/assets/earpod.png',
+          imageUrl: 'lib/assets/images/earpod.png',
           title: 'Airpods',
           brand: 'Apple',
           price: '\$333',
         ),
         _buildOrderItem(
-          imageUrl: 'lib/assets/hoodie.png',
+          imageUrl: 'lib/assets/images/hoodie.png',
           title: 'Hoodie',
           brand: 'Puma',
           price: '\$50',

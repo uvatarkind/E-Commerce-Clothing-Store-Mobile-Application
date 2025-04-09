@@ -1,21 +1,14 @@
+import 'package:e_commerce_clothing_store_mobile_application/app.dart';
 import 'package:flutter/material.dart';
-import 'features/products/presentation/pages/product_details_page.dart';
+import 'package:user_repository/user_repository.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:e_commerce_clothing_store_mobile_application/simple_bloc_observer.dart';
 
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: ProductDetailsPage(),
-      ),
-    );
-  }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  Bloc.observer = SimpleBlocObserver();
+  runApp(MyApp(FirebaseUserRepo()));
 }
