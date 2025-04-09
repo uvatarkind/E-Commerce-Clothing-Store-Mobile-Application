@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
-import 'features/products/presentation/pages/product_details_page.dart';
+
+import 'features/products/presentation/product_list_page.dart';
 
 
 void main() {
@@ -11,10 +14,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ProductDetailsPage(),
+        body: ProductListPage(),
+
       ),
     );
   }
