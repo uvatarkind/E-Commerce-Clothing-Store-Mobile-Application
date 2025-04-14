@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-dependencies:
+  
   http: ^1.3.0
   firebase_core: ^3.13.0
   bloc: ^9.0.0
@@ -19,6 +19,7 @@ dependencies:
 
   user_repository:
     path: packages/user_repository
+  flutter_svg: ^2.0.17
 
 dev_dependencies:
   flutter_test:
@@ -27,15 +28,22 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-    assets:
-    - lib/assets/images/earpod.png
-    - lib/assets/images/hoodie.png
-    - lib/assets/images/watch.png
-    - lib/assets/images/black_white_nike.png
-    - lib/assets/images/jacket.png
-    - lib/assets/images/TV.png
-    - lib/assets/images/white_t_shirt.png
-    - lib/assets/images/t-shirt_girl.png
+
+  assets:
+    - lib/assets/airpods.png
+    - lib/assets/hoodie.png
+    - lib/assets/watch.png
+    - lib/assets/black_white_nike.png
+    - lib/assets/jacket.png
+    - lib/assets/TV.png
+    - lib/assets/white_t_shirt.png
+    - lib/assets/t-shirt_girl.png
+    - lib/assets/profile_picture.png
+    -  lib/assets/child_cloth.png
+    - lib/assets/icons/bars.svg
+    - lib/assets/icons/wifi.svg
+    - lib/assets/icons/battery_full.svg
+    - lib/assets/icons/bell.svg
 
   fonts:
     - family: Poppins
