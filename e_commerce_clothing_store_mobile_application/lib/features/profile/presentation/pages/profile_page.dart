@@ -7,32 +7,7 @@ class ProfileScreen extends StatelessWidget {
       body: Column(
         children: [
           // Status Bar
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  '9:41',
-                  style: TextStyle(fontSize: 12),
-                ),
-                Row(
-                  children: const [
-                    Text(
-                      '●●●●',
-                      style: TextStyle(fontSize: 12),
-                    ),
-                    SizedBox(width: 4),
-                    Text(
-                      '📶',
-                      style: TextStyle(fontSize: 12),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-          
+
           // Profile Info
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 24),
@@ -40,7 +15,8 @@ class ProfileScreen extends StatelessWidget {
               children: [
                 const CircleAvatar(
                   radius: 40,
-                  backgroundImage: NetworkImage('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28203%29-B1iIudp3q99I5o02Q2gnqxymSU2gJO.png'),
+                  backgroundImage: NetworkImage(
+                      'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20%28203%29-B1iIudp3q99I5o02Q2gnqxymSU2gJO.png'),
                 ),
                 const SizedBox(height: 12),
                 const Text(
@@ -61,7 +37,7 @@ class ProfileScreen extends StatelessWidget {
               ],
             ),
           ),
-          
+
           // Menu Items
           Expanded(
             child: ListView(
@@ -72,7 +48,6 @@ class ProfileScreen extends StatelessWidget {
                 _buildMenuItem(Icons.mail_outline, 'Contact'),
                 _buildMenuItem(Icons.share_outlined, 'Share App'),
                 _buildMenuItem(Icons.help_outline, 'Help'),
-                
                 const SizedBox(height: 40),
                 Center(
                   child: TextButton(
@@ -90,30 +65,13 @@ class ProfileScreen extends StatelessWidget {
               ],
             ),
           ),
-          
+
           // Bottom Navigation
-          Container(
-            decoration: BoxDecoration(
-              border: Border(
-                top: BorderSide(color: Colors.grey[300]!),
-              ),
-            ),
-            padding: const EdgeInsets.symmetric(vertical: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _buildNavItem(Icons.home_outlined, false),
-                _buildNavItem(Icons.search, false),
-                _buildNavItem(Icons.lock_outline, false),
-                _buildNavItem(Icons.person_outline, true),
-              ],
-            ),
-          ),
         ],
       ),
     );
   }
-  
+
   Widget _buildMenuItem(IconData icon, String title) {
     return ListTile(
       contentPadding: const EdgeInsets.symmetric(vertical: 8),
@@ -136,7 +94,7 @@ class ProfileScreen extends StatelessWidget {
       onTap: () {},
     );
   }
-  
+
   Widget _buildNavItem(IconData icon, bool isActive) {
     return IconButton(
       icon: Icon(
